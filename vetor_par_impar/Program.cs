@@ -9,23 +9,22 @@ for (int i = 0; i < 10; i++)
 }
 
 //a) somente os valores pares;
-Console.WriteLine("Mostrando apenas os valores PARES:");
-for (int i = 1; i < 10; i += 2)
+Console.WriteLine("\nMostrando apenas os valores PARES:");
+for (int i = 1; i < 10; i++)
 {
-    Console.Write(numeros[i] + " ");
+    if (numeros[i] % 2 == 0) Console.Write(numeros[i] + " ");
 }
 
 //b) somente os valores impares;
-Console.WriteLine("\nMostrando apenas os valores IMPARES:");
-for (int i = 0; i < 10; i += 2)
+Console.WriteLine("Mostrando apenas os valores IMPARES:");
+for (int i = 0; i < 10; i++)
 {
-    Console.Write(numeros[i] + " ");
+    if (numeros[i] % 2 != 0) Console.Write(numeros[i] + " ");
 }
 
 //c) somente a primeira e a ultima posição;
-Console.Write("\nMostrando apenas o primeiro e o ultimo valor do vetor:");
-for (int i = 0; i < 10; i++)
-{
-    if (i == 0) Console.Write(numeros[i] + " ");
-    if (i == 9) Console.Write(numeros[i] + " ");
-}
+Console.Write("\nPrimeiro valor do vetor:");
+Console.WriteLine(numeros[0]);
+
+Console.Write("\nUltimo valor do vetor:");
+Console.WriteLine(numeros[9]);
